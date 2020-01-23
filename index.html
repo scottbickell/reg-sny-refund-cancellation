@@ -20,26 +20,26 @@
               <table align="center" class="container main-container float-center"><tbody><tr><td>
                 <table class="row collapse"><tbody><tr>
                   <th class="small-12 large-12 columns first last" noexpander=""><table><tr><th>
-                    <img src="assets/img/sony-refund-hero.jpg" alt="Sony Care">
+                    <img src="assets/img/sony-refund-hero.jpg" width="580" alt="Sony Care">
                   </th>
 <th class="expander"></th></tr></table></th>
                 </tr></tbody></table>
                 <table class="row"><tbody><tr>
                   <th class="message-body small-12 large-12 columns first last"><table><tr><th>
                     <table class="spacer"><tbody><tr><td height="20px" style="font-size:20px;line-height:20px;">&#xA0;</td></tr></tbody></table> 
-                    <p> Dear %%first_name%%, </p>
-                    <p> We’re sorry you weren’t satisfied with your Sony Service Plan. Your Sony Service Plan order has been
-                      cancelled and you will be fully refunded. Please keep this email for your records. </p>
+                    <p> Dear %%First_Name%%, </p>
+                    <p> We’re sorry you weren’t satisfied with your %%service_plan_name%% service plan. Your plan has been
+                      cancelled and you will be refunded per our Terms and Conditions. Please keep this email for your records. </p>
                     <p> Your refund will appear on your billing statement as <span class="nowrap">“Registria - Sony Service Plans”</span> </p>
-                    <p> Sincerely,<br> Sony Service Plan Customer Service</p>
+                    <p> Sincerely,<br> Customer Service<br>Sony Service Plans</p>
                     <table class="spacer"><tbody><tr><td height="20px" style="font-size:20px;line-height:20px;">&#xA0;</td></tr></tbody></table> 
                     <div class="your-plan-details">
-                      <img src="assets/img/your-refund-details.png" class="your-plan-details-icon" alt="Your refund details">
+                      <img src="assets/img/your-refund-details.png" width="250" class="your-plan-details-icon" alt="Your refund details">
                       <table class="spacer"><tbody><tr><td height="10px" style="font-size:10px;line-height:10px;">&#xA0;</td></tr></tbody></table> 
                       <p class="plan-details">
-                        <strong>Service Plan:</strong> Sony Protect Plus / 3 Years of Protection<br>
-                        <strong>Order Number:</strong> 12345<br>
-                        <strong>Price:</strong> $##.##<br>
+                        <strong>Service Plan:</strong> %%service_plan_name%%<br>
+                        <strong>Order Number:</strong> %%order_id%%<br>
+                        <strong>Refuned Amount:</strong> $%%order_amount%%<br>
                       </p>
                     </div>
                   </th>
@@ -55,8 +55,10 @@
                     <p>Sony Electronics Inc. | Personal Information Management Office | 115 West Century Road, <span class="nowrap">Suite 250</span> | Paramu​s, NJ 0​7652
                     </p>
                     <p>
-                      &copy; 2020 Sony. All rights reserved.
+                        &copy; %%format(MAILING_SEND_DATE, "yyyy")%% Sony. All rights reserved.
                     </p>
+                    <p>You are receiving this email in response to your purchase of a Sony Service Plan. Do not reply to
+                        this message. Please use the “Contact Us” link above.</p>
                   </th>
 <th class="expander"></th></tr></table></th>
                 </tr></tbody></table>
